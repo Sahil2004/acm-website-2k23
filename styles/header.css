@@ -1,0 +1,182 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+    background-color: transparent;
+    top: 0;
+    z-index: 22;
+    gap: 100px;
+  }
+  
+  .logo {
+    cursor: pointer;
+  }
+  
+  .nav__links a,
+  .cta,
+  .overlay__content a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #edf0f1;
+    text-decoration: none;
+  }
+  
+  .nav__links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav__links li {
+    padding: 0px 20px;
+  }
+  
+  .nav__links li a {
+    transition: color 0.3s ease 0s;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .nav__links li a:hover {
+    border-bottom: 
+  }
+  
+  .nav__links li a:hover {
+    color: #0088a9;
+  }
+  
+  .cta {
+    text-align: center;
+    padding: 17px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease 0s;
+    width: auto;
+  }
+  
+  .cta:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+  }
+  
+  /* Mobile Nav */
+  
+  .menu {
+    display: none;
+  }
+  
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: #24252a;
+    overflow-x: hidden;
+    transition: width 0.5s ease 0s;
+  }
+  
+  .overlay--active {
+    width: 100%;
+  }
+  
+  .overlay__content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .overlay a {
+    padding: 15px;
+    font-size: 36px;
+    display: block;
+    transition: color 0.3s ease 0s;
+  }
+  
+  .overlay a:hover,
+  .overlay a:focus {
+    color: #0088a9;
+  }
+  .overlay .close {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    color: #edf0f1;
+  }
+  
+  @media screen and (max-height: 450px) {
+    header{
+      gap: 50%;
+    }
+    .overlay a {
+      font-size: 20px;
+    }
+    .overlay .close {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+  
+  @media only screen and (max-width: 1000px) {
+    .nav__links,
+    .cta {
+      display: none;
+    }
+    .menu {
+      display: initial;
+    }
+  }
+  
+
+  .logo-img {
+    width: 150px;
+  }
+
+  /* Caraousel */
+
+  .car {
+    z-index: 1;
+  }
+
+  .container {
+    width: 100%;
+  }
+  
+  .swiper {
+    width: 100%;
+  }
+  
+  .image__wrapper {
+    width: 100%;
+    padding-top: 56.25%;
+  }
+  
+  .image__wrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+  }
+  
+  /* .swiper-pagination-bullet-active { */
+  /* 	background-color: red; */
+  /* } */
+  /**/
+  /* .swiper-button-prev, */
+  /* .swiper-button-next { */
+  /* 	color: red; */
+  /* } */
+  /**/
+  /* .swiper-button-prev:after, */
+  /* .swiper-button-next:after { */
+  /* 	font-size: 2rem; */
+  /* } */
+  /**/
